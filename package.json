@@ -11,7 +11,7 @@
     "url": "git+https://github.com/apiverve/phonenumbervalidator-API.git"
   },
   "keywords": [
-    "phone validator"," phone number validator"," phone number validation"," phone number validator api"," phone number validation api"," phone number validator tool"," phone number validation tool"," phone number validator software"," phone number validation software"," phone number validator service"," phone number validation service"," phone number validator library"," phone number validation library"," phone number validator sdk"," phone number validation sdk"," phone number validator code"," phone number validation code"," phone number validator script"," phone number validation script"," phone number validator program"," phone number validation program"," phone number validator application"," phone number validation application"," phone number validator app"," phone number validation app"," phone number validator utility"," phone number validation utility"," phone number validator helper"," phone number validation helper"," phone number validator helper tool"," phone number validation helper tool"," phone number validator helper software"," phone number validation helper software"," phone number validator helper service"," phone number validation helper service"," phone number validator helper library"," phone number validation helper library"," phone number validator helper sdk"," phone number validation helper sdk"," phone number validator helper code"," phone number validation helper code"," phone number validator helper script"," phone number validation helper script"," phone number validator helper program"," phone number validation helper program"," phone number validator helper application"," phone number validation helper application"," phone number validator helper app"," phone number validation helper app"," phone number validator helper tool"," phone number validation helper tool"," phone number validator helper utility"," phone number validation helper utility"," phone number validator helper"
+    "phone validator","phone number validator","phone number validation","phone number validator api","phone number validation api"
   ],
   "author": "APIVerve <hello@apiverve.com> (http://apiverve.com/)",
   "license": "MIT",
@@ -27,6 +27,6 @@
   "dependencies": {
     "node-fetch": "3.3.2",
     "promise": "^7.1.1",
-    "request": "^2.69.0"
+    "axios": "^0.15.3"
   }
 }
