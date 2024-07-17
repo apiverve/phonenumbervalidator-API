@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/phonenumbervalidator",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Phone Number Validator is a simple tool for validating if a phone number is valid or not. It checks the phone number format and the country code to see if the phone number is valid.",
   "main": "index.js",
   "scripts": {
