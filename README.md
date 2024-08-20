@@ -1,4 +1,4 @@
-Phone Validator API
+Phone Number Validator API
 ============
 
 Phone Number Validator is a simple tool for validating if a phone number is valid or not. It checks the phone number format and the country code to see if the phone number is valid.
@@ -7,7 +7,7 @@ Phone Number Validator is a simple tool for validating if a phone number is vali
 ![Code Climate](https://img.shields.io/badge/maintainability-B-purple)
 ![Prod Ready](https://img.shields.io/badge/production-ready-blue)
 
-This is a Javascript Wrapper for the [Phone Validator API](https://apiverve.com/marketplace/api/phonenumbervalidator)
+This is a Javascript Wrapper for the [Phone Number Validator API](https://apiverve.com/marketplace/api/phonenumbervalidator)
 
 ---
 
@@ -25,7 +25,7 @@ You can get it by signing up at [https://apiverve.com](https://apiverve.com)
 
 ## Usage
 
-The Phone Validator API documentation is found here: [https://docs.apiverve.com/api/phonenumbervalidator](https://docs.apiverve.com/api/phonenumbervalidator).  
+The Phone Number Validator API documentation is found here: [https://docs.apiverve.com/api/phonenumbervalidator](https://docs.apiverve.com/api/phonenumbervalidator).  
 You can find parameters, example responses, and status codes documented here.
 
 ### Setup
@@ -85,7 +85,8 @@ api.execute(query, function (error, data) {
       "rfc": "tel:+1-816-555-1017",
       "e164": "+18165551017"
     }
-  }
+  },
+  "code": 200
 }
 ```
 
