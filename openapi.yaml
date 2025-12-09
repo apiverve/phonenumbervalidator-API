@@ -1,0 +1,83 @@
+openapi: 3.0.4
+info:
+  title: Phone Number Validator
+  description: Phone Number Validator is a simple tool for validating if a phone number is valid or not. It checks the phone number format and the country code to see if the phone number is valid.
+  termsOfService: https://apiverve.com/terms/
+  contact:
+    name: APIVerve Support
+    email: hello@apiverve.com
+    url: https://apiverve.com/contact
+  version: 1.0.9
+externalDocs:
+  description: Learn more about APIVerve
+  url: https://docs.apiverve.com?utm_source=openapi
+servers:
+- url: https://api.apiverve.com/
+paths:
+  /v1/phonenumbervalidator:
+    get:
+      summary: Validate Phone Number
+      description: Phone Number Validator is a simple tool for validating if a phone number is valid or not. It checks the phone number format and the country code to see if the phone number is valid.
+      operationId: phonenumbervalidator
+      parameters:
+      - name: number
+        in: query
+        schema:
+          type: string
+        required: true
+        description: The phone number to validate
+        example: 816-555-1017
+      - name: country
+        in: query
+        schema:
+          type: string
+        required: true
+        description: The country code of the phone number (e.g., us, uk)
+        example: us
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: status
+                  error:
+                    type: string
+                    description: error
+                  data:
+                    type: string
+                    description: data
+              example:
+                status: ok
+                error: 
+                data:
+                  country: US
+                  detectedCountry: US
+                  countrycode: 1
+                  numberNational: 8165551017
+                  extension: 
+                  isvalid: true
+                  type: fixed_line_or_mobile
+                  formatted:
+                    international: +1 816-555-1017
+                    national: (816) 555-1017
+                    rfc: tel:+1-816-555-1017
+                    e164: '+18165551017'
+        '401':
+          description: Your request was not authorized, or your API Key was invalid
+        '404':
+          description: Requested resource was not found
+        '500':
+          description: A server error has occured, try again later
+components:
+  securitySchemes:
+    api_key:
+      type: apiKey
+      name: x-api-key
+      in: header
+security:
+- api_key: []
